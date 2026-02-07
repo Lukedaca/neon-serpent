@@ -1,6 +1,6 @@
 # NEON SERPENT
 
-### Ultimatni hadova hra | Jeden HTML soubor | Zadne zavislosti
+### Ultimate Snake Game | Single HTML File | Zero Dependencies
 
 <div align="center">
 
@@ -19,13 +19,145 @@
     ╚══════╝╚══════╝╚═╝  ╚═╝╚═╝     ╚══════╝╚═╝  ╚═══╝   ╚═╝
 ```
 
-**Kyberpunková neonová hra Had s procedurálním zvukem, více herními módy, achievementy a vizuálními efekty.**
+**A cyberpunk neon snake game with procedural audio, multiple game modes, achievements, and stunning visuals.**
 
-**Vše v jednom HTML souboru. Žádné buildování. Žádné závislosti. Stačí otevřít a hrát.**
+**All in a single HTML file. No build tools. No dependencies. Just open and play.**
 
-[Jak hrát](#jak-hrat) | [Funkce](#funkce) | [Herní módy](#herni-mody) | [Ovládání](#ovladani)
+[Play Now](#how-to-play) | [Features](#features) | [Game Modes](#game-modes) | [Controls](#controls) | [Cesky](#-ceska-verze)
 
 </div>
+
+---
+
+## Features
+
+| Feature | Description |
+|---------|-------------|
+| **4 Game Modes** | Classic, Maze, Time Attack, Endless |
+| **Procedural Audio** | Web Audio API synth sounds - eat, death, power-ups, level up, ambient music |
+| **6 Power-ups** | Speed, Ghost, Double Points, Magnet, Shield, Freeze |
+| **15 Achievements** | Trackable goals with toast notifications |
+| **5 Snake Skins** | Neon, Fire, Ice, Galaxy, Matrix |
+| **Portals** | Teleportation portals appear at higher levels |
+| **Combo System** | Chain food pickups for score multipliers with milestone effects |
+| **Poison Food** | Avoid the red danger zones or use Shield to survive |
+| **Golden Apple** | Rare spawn - massive points + temporary shield |
+| **Local Storage** | High scores, achievements, settings persist between sessions |
+| **CRT Effect** | Optional retro scanline overlay |
+| **Mobile Support** | Touch swipe controls + D-pad |
+| **Zero Dependencies** | Single HTML file, works offline |
+
+## Game Modes
+
+### Classic
+The original snake experience. Walls kill. Obstacles appear from level 3+. Portals from level 5+. How far can you go?
+
+### Maze
+Navigate through walls and corridors that change with each level. Tight spaces demand precise control.
+
+### Time Attack
+90 seconds on the clock. Wrap-around edges (no wall death). Collect as much food as possible before time runs out.
+
+### Endless
+No walls - the snake wraps around edges. Speed increases continuously. No level cap. Pure survival.
+
+## Controls
+
+| Key | Action |
+|-----|--------|
+| `W` `A` `S` `D` / `Arrow Keys` | Move |
+| `Space` | Pause / Resume |
+| `Escape` | Pause |
+| `M` | Toggle music |
+
+**Mobile:** Swipe on the game canvas or use the on-screen D-pad.
+
+## Power-ups
+
+| Icon | Name | Effect | Duration |
+|------|------|--------|----------|
+| ⚡ | **Speed** | Move 40% faster | 5s |
+| 👻 | **Ghost** | Pass through walls and yourself | 6s |
+| ×2 | **Double** | Double points | 8s |
+| 🧲 | **Magnet** | Food moves toward you | 7s |
+| 🛡 | **Shield** | Survive one collision | 10s |
+| ❄ | **Freeze** | Slow down time | 6s |
+
+## How to Play
+
+1. **Download** `index.html` (or clone this repo)
+2. **Open** the file in any modern browser
+3. **Select** a game mode
+4. **Play!**
+
+```bash
+# Or clone and open
+git clone https://github.com/Lukedaca/neon-serpent.git
+cd neon-serpent
+# Open index.html in your browser
+start index.html        # Windows
+open index.html         # macOS
+xdg-open index.html     # Linux
+```
+
+> No server needed. No npm install. No build step. Just a browser.
+
+## Tech Stack
+
+- **HTML5 Canvas** - Game rendering
+- **Web Audio API** - Procedural sound synthesis
+- **CSS3** - UI, animations, backdrop filters
+- **localStorage** - Persistence
+- **Vanilla JavaScript** - Zero frameworks
+
+## Browser Support
+
+Works in all modern browsers:
+- Chrome / Edge / Brave
+- Firefox
+- Safari
+- Opera
+
+## Settings
+
+Access settings from the main menu:
+- **Sound FX** - Toggle on/off
+- **Music** - Ambient synth drone
+- **Volume** - Master volume control
+- **Snake Skin** - 5 color themes
+- **CRT Effect** - Retro scanline overlay
+
+## Achievements
+
+15 achievements to unlock:
+
+| Achievement | Requirement |
+|-------------|-------------|
+| First Blood | Eat your first food |
+| Hungry | Eat 50 in one game |
+| Starving | Eat 100 in one game |
+| Combo x5 | Reach x5 combo |
+| Combo King | Reach x10 combo |
+| Combo God | Reach x20 combo |
+| Speed Demon | Reach level 5 |
+| Veteran | Reach level 10 |
+| Collector | Collect all 6 power-up types |
+| Portal Master | Use portals 5 times |
+| Centurion | Score 1000+ |
+| Legend | Score 5000+ |
+| Survivor | Survive 2 minutes |
+| Endurance | Survive 5 minutes |
+| Shield Hero | Shield saves you from death |
+
+---
+
+# Ceska verze
+
+### Ultimatni hadova hra | Jeden HTML soubor | Zadne zavislosti
+
+**Kyberpunkova neonova hra Had s proceduralnim zvukem, vice hernimi mody, achievementy a vizualnimi efekty.**
+
+**Vse v jednom HTML souboru. Zadne buildovani. Zadne zavislosti. Staci otevrit a hrat.**
 
 ---
 
@@ -33,126 +165,118 @@
 
 | Funkce | Popis |
 |--------|-------|
-| **4 herní módy** | Classic, Maze, Time Attack, Endless |
-| **Procedurální zvuk** | Web Audio API syntezátor - jedení, smrt, power-upy, level up, ambientní hudba |
-| **6 power-upů** | Speed, Ghost, Double Points, Magnet, Shield, Freeze |
-| **15 achievementů** | Sledovatelné cíle s toast notifikacemi |
-| **5 skinů hada** | Neon, Fire, Ice, Galaxy, Matrix |
-| **Portály** | Teleportační portály se objevují na vyšších levelech |
-| **Combo systém** | Řetěz jedení pro násobič skóre s milníkovými efekty |
-| **Jedovaté jídlo** | Vyhýbej se červeným zónám nebo použij Shield |
-| **Zlaté jablko** | Vzácné - masivní body + dočasný shield |
-| **Local Storage** | High score, achievementy a nastavení se ukládají mezi sezeními |
-| **CRT efekt** | Volitelný retro scanline overlay |
-| **Podpora mobilu** | Ovládání swipem + D-pad |
-| **Žádné závislosti** | Jeden HTML soubor, funguje offline |
+| **4 herni mody** | Classic, Maze, Time Attack, Endless |
+| **Proceduralni zvuk** | Web Audio API syntezator - jedeni, smrt, power-upy, level up, ambientni hudba |
+| **6 power-upu** | Speed, Ghost, Double Points, Magnet, Shield, Freeze |
+| **15 achievementu** | Sledovatelne cile s toast notifikacemi |
+| **5 skinu hada** | Neon, Fire, Ice, Galaxy, Matrix |
+| **Portaly** | Teleportacni portaly se objevuji na vyssich levelech |
+| **Combo system** | Retez jedeni pro nasobic skore s milnikovymi efekty |
+| **Jedovate jidlo** | Vyhybej se cervenym zonam nebo pouzij Shield |
+| **Zlate jablko** | Vzacne - masivni body + docasny shield |
+| **Local Storage** | High score, achievementy a nastaveni se ukladaji mezi sezenimi |
+| **CRT efekt** | Volitelny retro scanline overlay |
+| **Podpora mobilu** | Ovladani swipem + D-pad |
+| **Zadne zavislosti** | Jeden HTML soubor, funguje offline |
 
-## Herní módy
+## Herni mody
 
 ### Classic
-Klasický had. Zdi zabíjejí. Překážky se objevují od levelu 3+. Portály od levelu 5+. Jak daleko se dostaneš?
+Klasicky had. Zdi zabiji. Prekazky se objevuji od levelu 3+. Portaly od levelu 5+. Jak daleko se dostanes?
 
 ### Maze
-Naviguj se skrz zdi a chodby, které se mění s každým levelem. Těsné prostory vyžadují přesné ovládání.
+Naviguj se skrz zdi a chodby, ktere se meni s kazdym levelem. Tesne prostory vyzaduji presne ovladani.
 
 ### Time Attack
-90 sekund na hodinkách. Průchozí okraje (žádná smrt od zdí). Posbírej co nejvíc jídla, než vyprší čas.
+90 sekund na hodinkach. Pruchozi okraje (zadna smrt od zdi). Posbirej co nejvic jidla, nez vyprsi cas.
 
 ### Endless
-Žádné zdi - had prochází přes okraje. Rychlost se neustále zvyšuje. Žádný limit levelů. Čisté přežití.
+Zadne zdi - had prochazi pres okraje. Rychlost se neustale zvysuje. Zadny limit levelu. Ciste preziti.
 
-## Ovládání
+## Ovladani
 
-| Klávesa | Akce |
+| Klavesa | Akce |
 |---------|------|
-| `W` `A` `S` `D` / `Šipky` | Pohyb |
-| `Mezerník` | Pauza / Pokračování |
+| `W` `A` `S` `D` / `Sipky` | Pohyb |
+| `Mezernik` | Pauza / Pokracovani |
 | `Escape` | Pauza |
 | `M` | Zapnout/vypnout hudbu |
 
-**Mobil:** Swipni po herní ploše nebo použij D-pad na obrazovce.
+**Mobil:** Swipni po herni plose nebo pouzij D-pad na obrazovce.
 
 ## Power-upy
 
-| Ikona | Název | Efekt | Doba trvání |
+| Ikona | Nazev | Efekt | Doba trvani |
 |-------|-------|-------|-------------|
-| ⚡ | **Speed** | Pohyb o 40% rychlejší | 5s |
-| 👻 | **Ghost** | Průchod zdmi a vlastním tělem | 6s |
-| ×2 | **Double** | Dvojnásobné body | 8s |
-| 🧲 | **Magnet** | Jídlo se přitahuje k tobě | 7s |
-| 🛡 | **Shield** | Přežiješ jednu kolizi | 10s |
-| ❄ | **Freeze** | Zpomalení času | 6s |
+| ⚡ | **Speed** | Pohyb o 40% rychlejsi | 5s |
+| 👻 | **Ghost** | Pruchod zdmi a vlastnim telem | 6s |
+| ×2 | **Double** | Dvojnasobne body | 8s |
+| 🧲 | **Magnet** | Jidlo se pritahuje k tobe | 7s |
+| 🛡 | **Shield** | Prezijes jednu kolizi | 10s |
+| ❄ | **Freeze** | Zpomaleni casu | 6s |
 
-## Jak hrát
+## Jak hrat
 
-1. **Stáhni** `index.html` (nebo naklonuj repo)
-2. **Otevři** soubor v libovolném moderním prohlížeči
-3. **Vyber** herní mód
+1. **Stahni** `index.html` (nebo naklonuj repo)
+2. **Otevri** soubor v libovolnem modernim prohlizeci
+3. **Vyber** herni mod
 4. **Hraj!**
 
 ```bash
-# Nebo naklonuj a otevři
+# Nebo naklonuj a otevri
 git clone https://github.com/Lukedaca/neon-serpent.git
 cd neon-serpent
-# Otevři index.html v prohlížeči
+# Otevri index.html v prohlizeci
 start index.html        # Windows
 open index.html         # macOS
 xdg-open index.html     # Linux
 ```
 
-> Žádný server. Žádný npm install. Žádný build. Stačí prohlížeč.
+> Zadny server. Zadny npm install. Zadny build. Staci prohlizec.
 
 ## Technologie
 
-- **HTML5 Canvas** - Vykreslování hry
-- **Web Audio API** - Procedurální syntéza zvuku
+- **HTML5 Canvas** - Vykreslovani hry
+- **Web Audio API** - Proceduralni synteza zvuku
 - **CSS3** - UI, animace, backdrop filtry
 - **localStorage** - Persistence dat
-- **Vanilla JavaScript** - Žádné frameworky
+- **Vanilla JavaScript** - Zadne frameworky
 
-## Podpora prohlížečů
+## Nastaveni
 
-Funguje ve všech moderních prohlížečích:
-- Chrome / Edge / Brave
-- Firefox
-- Safari
-- Opera
-
-## Nastavení
-
-Přístup z hlavního menu:
-- **Sound FX** - Zapnout/vypnout zvukové efekty
-- **Music** - Ambientní synth drone
-- **Volume** - Hlavní hlasitost
-- **Snake Skin** - 5 barevných motivů
+Pristup z hlavniho menu:
+- **Sound FX** - Zapnout/vypnout zvukove efekty
+- **Music** - Ambientni synth drone
+- **Volume** - Hlavni hlasitost
+- **Snake Skin** - 5 barevnych motivu
 - **CRT Effect** - Retro scanline overlay
 
 ## Achievementy
 
-15 achievementů k odemčení:
+15 achievementu k odemceni:
 
-| Achievement | Podmínka |
+| Achievement | Podminka |
 |-------------|----------|
-| First Blood | Sněz první jídlo |
-| Hungry | Sněz 50 v jedné hře |
-| Starving | Sněz 100 v jedné hře |
-| Combo x5 | Dosáhni x5 combo |
-| Combo King | Dosáhni x10 combo |
-| Combo God | Dosáhni x20 combo |
-| Speed Demon | Dosáhni level 5 |
-| Veteran | Dosáhni level 10 |
-| Collector | Sesbírej všech 6 typů power-upů |
-| Portal Master | Použij portál 5x |
-| Centurion | Skóre 1000+ |
-| Legend | Skóre 5000+ |
-| Survivor | Přežij 2 minuty |
-| Endurance | Přežij 5 minut |
-| Shield Hero | Shield tě zachrání před smrtí |
+| First Blood | Snez prvni jidlo |
+| Hungry | Snez 50 v jedne hre |
+| Starving | Snez 100 v jedne hre |
+| Combo x5 | Dosahni x5 combo |
+| Combo King | Dosahni x10 combo |
+| Combo God | Dosahni x20 combo |
+| Speed Demon | Dosahni level 5 |
+| Veteran | Dosahni level 10 |
+| Collector | Sesbirej vsech 6 typu power-upu |
+| Portal Master | Pouzij portal 5x |
+| Centurion | Skore 1000+ |
+| Legend | Skore 5000+ |
+| Survivor | Prezij 2 minuty |
+| Endurance | Prezij 5 minut |
+| Shield Hero | Shield te zachrani pred smrti |
 
 ---
 
 <div align="center">
 
-**Vytvořeno pomocí Claude Code**
+**Made with Claude Code**
 
 </div>
